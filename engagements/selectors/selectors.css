@@ -1,0 +1,17 @@
+p {
+    color: blue;
+}
+header h1 {color: cadetblue;}
+
+footer {color: brown
+    ;}
+
+main p {color: rgb(90, 49, 49);}
+
+#maintitle {color: green;}
+.orange {color: orangered;}
+
+.bigger {
+    font-size: 15pt;
+    font-weight: bold;
+}
