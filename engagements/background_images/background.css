@@ -1,0 +1,18 @@
+img {
+    max-width: 70%;
+}
+
+body {background-color: blue;
+    background-image: url(water.jpeg);
+    background-repeat: repeat;
+    color: aliceblue;
+}
+
+header {
+    background: url("bb.png") no-repeat right top;
+    padding: 40px;
+}
+
+ul {
+    list-style-image: url(dot.png);
+}
