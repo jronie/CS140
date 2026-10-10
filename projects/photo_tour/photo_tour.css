@@ -1,0 +1,25 @@
+.current {
+    color: rgb(10, 155, 20);
+}
+
+.option {
+    color: blue;
+}
+
+.header {
+    background-image: url(makerspace.jpg);
+    background-size: 40% auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+header {
+    padding: 40px;
+}
+
+.mainpage {
+    list-style-image: url(makerdot.png);
+    background-image: url(book.png);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(108, 49, 49);
+}
