@@ -1,0 +1,24 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    overflow: scroll;
+    border-top: 4px solid red;
+}
+
+.paragraph1 {width: 250px;
+margin:0;
+border-width: 10px ;
+border-color: aqua;
+border-style: groove;
+}
+
+.braw {
+    width:500px;
+    margin: 0;
+    padding: 30px
+    
+}
+
+.prawns {
+    border: thin solid blue;
+}
