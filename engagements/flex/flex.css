@@ -16,3 +16,15 @@ body {
     /* Ah, yes. You're reading my code. How nice. */
     gap: 20px;
 }
+
+nav a {
+    display: block;
+    padding: 5px 10px;
+    background-color: rgb(30, 46, 40);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
