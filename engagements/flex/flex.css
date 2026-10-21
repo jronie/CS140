@@ -1,0 +1,18 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card {
+    border: 2px solid black;
+    box-sizing: 2px 2px 2px;
+    padding: 5px;
+    
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    /* Ah, yes. You're reading my code. How nice. */
+    gap: 20px;
+}
