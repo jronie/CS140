@@ -1,3 +1,65 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(114, 110, 110);
+}
+
+.tablediv {
+    overflow-x: auto;
+}
+
+#schedule {
+    border: 1px solid black;
+}
+
+#schedule th, #schedule td {
+    border: 1px solid black;
+
+   
+}
+
+#schedule th:hover, #schedule td:hover {
+    background-color: rgb(178, 194, 40);
+}
+
 table {
-    border: solid black 2px;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+#winter {
+    background-color: rgb(118, 193, 193);
+    text-align: center;
+
+}
+
+#fall {
+    background-color: rgb(214, 140, 55);
+    text-align: center;
+}
+
+.headsing {
+background-color: rgb(224, 137, 137);
+
+}
+
+.normal {
+background-color: bisque;
+}
+
+caption {
+    caption-side: bottom;
+    
+}
+
+#schedule tbody tr:nth-child(even) {
+    background-color: rgb(197, 193, 155);
+    text-align: right;
+}
+
+#schedule tbody tr:nth-child(odd) {
+    text-align: right;
+}
+
+.haha {
+    text-align: right;
 }

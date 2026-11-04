@@ -11,79 +11,80 @@
         <h1>My Class Schedule</h1>
     </header>
 <main>
-<table border="1">
-    <caption>Figure 1. Course schedules from Fall 2026 to Winter 2026.</caption>
-    <thead>
-        <tr>
-            <th scope="col">Department</th>
-            <th scope="col">Course Number</th>
-            <th scope="col">Title</th>
-            <th scope="col">Location</th>
-            <th scope="col">Credits</th>
-        </tr>
-    </thead>
-   <tbody>
-        <tr>
-            <th colspan="5">Fall 2026</th>
-        </tr>
-        <tr>
-            
-            <td rowspan="2">CS</td>
-            <td>140</td>
-            <td>Web Design</td>
-            <td>Nonoland</td>
-            <td>3</td>
-        
-        </tr>
-    
-        <tr>
-        
-            <td>275</td>
-            <td>Pacific Coding</td>
-            <td>Ur mom's house</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td>ENTR</td>
-            <td>101</td>
-            <td>Personal Finance</td>
-            <td>HGB</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>FOB</td>
-            <td>320</td>
-            <td>Tongan</td>
-            <td>Tonga</td>
-            <td>4</td>
-        </tr>
-    </tbody>
-    <tfoot>
-        <tr>
-            <th scope="row" colspan="4">Credits Total:</th>
-            <td>22</td>
-        </tr>
-    </tfoot>
+<div class="tablediv">
+    <table id="schedule">
+        <caption>Figure 1. Course schedules from Fall 2026 to Winter 2026.</caption>
+        <thead>
+            <tr class="headsing">
+                <th scope="col">Department</th>
+                <th scope="col">Course Number</th>
+                <th scope="col">Title</th>
+                <th scope="col">Location</th>
+                <th scope="col">Credits</th>
+            </tr>
+        </thead>
     <tbody>
-        <tr>
-            <th colspan="5">Winter 2026</th>
-        </tr>
-        <tr>
-            <td>BUSM</td>
-            <td>120</td>
-            <td>IDK</td>
-            <td>Rawr</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>POV</td>
-            <td>550</td>
-            <td>Heehee</td>
-            <td>The Library</td>
-            <td>1</td>
-        </tr>
-    </tbody>
-</table>
+            <tr>
+                <th id= fall colspan="5">Fall 2026</th>
+            </tr>
+            <tr class="normal">
+                <td rowspan="2">CS</td>
+                <td>140</td>
+                <td>Web Design</td>
+                <td>Nonoland</td>
+                <td>3</td>
+            
+            </tr>
+        
+            <tr class="normal">
+            
+                <td>275</td>
+                <td>Pacific Coding</td>
+                <td>Ur mom's house</td>
+                <td>6</td>
+            </tr>
+            <tr class="normal">
+                <td>ENTR</td>
+                <td>101</td>
+                <td>Personal Finance</td>
+                <td>HGB</td>
+                <td>3</td>
+            </tr>
+            <tr class="normal">
+                <td>FOB</td>
+                <td>320</td>
+                <td>Tongan</td>
+                <td>Tonga</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="headsing">
+                <th scope="row" colspan="4">Credits Total:</th>
+                <td class="haha">22</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th id=winter colspan="5">Winter 2026</th>
+            </tr>
+            <tr class="normal">
+                <td>BUSM</td>
+                <td>120</td>
+                <td>IDK</td>
+                <td>Rawr</td>
+                <td>5</td>
+            </tr>
+            <tr class="normal">
+                <td>POV</td>
+                <td>550</td>
+                <td>Heehee</td>
+                <td>The Library</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 <h1>Questions</h1>
 <p>Use a table when you want to show data in an organized format. When you just want to write about something, just do it normally.
@@ -91,6 +92,9 @@
 <p>You should always make the page accessible-- unless it's just for you. But if others will use it, make it accessible.</p>
 <p>AI helped me most when using rowspan.</p>
 <p>AI gave me some examples, which was great, but I wrote my own code.</p>
+<p>Border attribute is outdated.</p>
+<p>Use the "nth-child" to select odds or evens.</p>
+<p>It tells you whether you're selecting odds or evens</p>
 </main>
 <footer>
     <p>&copy;2026 Jojo</p>
