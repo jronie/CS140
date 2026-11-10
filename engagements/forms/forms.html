@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Form</title>
+</head>
+<body>
+    <header>
+        <h1>The Great Big Website</h1>
+        <nav></nav>
+    </header>
+    <main>
+        <form action="formprocessing.html" method="get">
+            <div class="form-row">
+                <label for="personname">Full Name</label>
+                <input id="personname" type="text" name="fullname" placeholder="Full Name">
+
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Email">
+
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input type="password" name="pass" id="password" placeholder="Password">
+            </div>
+            <div class="form-row"></div> 
+                <input type="submit">
+            </div>
+
+            <div>
+                <p>Radio Button:</p>
+
+                <input type="radio" id="html" name="favoritelanguage" checked>
+                <label for="html">HTML</label>
+
+                <input type="radio" id="css" name="favoritelanguage">
+                <label for="css">CSS</label>
+
+                <input type="radio" id="javascript" name="favoritelanguage">
+                <label for="javascript">JavaScript</label>
+            </div>
+            <br>
+            <div>
+                <label for="paragraph">This is textarea:</label>
+                <textarea id="paragraph" name="paragraph" rows="4" cols="50" placeholder="Text Text Text"></textarea>
+            </div>
+            <div>
+                <label for="options">Select box:</label>
+                <select name="options" id="options">
+                    <option value="volvo">Big Mac</option>
+                    <option value="saab">Whopper</option>
+                    <option value="mercedes" selected>Taco</option>
+                    <option value="audi">Pizza</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox" name="newsletter" value="yes">
+                <label for="checkbox">Click this button (checkbox)</label>
+            </div>
+            <br>
+            <div>
+                <p>Enter your favorite url:</p>
+                <input type="url" placeholder="example.com" />
+            </div>
+            <br>
+            <div>
+                <p>Give us your number</p>
+                <input type="tel" placeholder="808-***-****" />
+            </div>
+        </form>
+        <p>Submitting a form is like clicking another link. Action shows where the submitted information will go.</p>
+        <p>Method defines the security of information. If you change information, use post.</p>
+        <p>"Get" is unsecure and places information in the link bar. Post is better as it hides the info from the search bar, but is only a little better. HTTPS is the best as it encrpits information.</p>
+        <p>If you want an option to be automatically selected, you must add "checked" to the input.</p>
+        <p>Preset-values make an option automatically checked, placeholders just give an example of how you can respond to the prompt.</p>
+        <p>HTML5 added color, date, datetime-local, email, month, number, range, search, tel, time, url, and week. I used tel and url.</p>
+    </main>
+    <footer></footer>
+
+    
+</body>
+</html>
