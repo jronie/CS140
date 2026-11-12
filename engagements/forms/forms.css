@@ -1,0 +1,84 @@
+.form-row, .check-row {
+    margin: 10px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.form-row label {
+   width: 150px;
+   text-align: right;
+}
+
+textarea {
+    background-color: rgb(172, 137, 92);
+}
+
+.spacer {
+    width: 150px;
+}
+
+.url input{
+    background-color: rgb(117, 166, 105);
+}
+
+
+
+
+
+/** Styles **/
+
+
+fieldset {
+    background-color: rgb(115, 151, 151);
+    border: 2px solid green;
+    box-shadow: 3px 3px 3px;
+
+}
+
+body {
+    background-color: rgb(91, 91, 161);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-row input:not([type=submit]) {
+    background-color: rgb(109, 221, 221);
+}
+
+.form-row input[type="submit"] {
+    background-color: rgb(114, 96, 96);
+}
+
+
+
+textarea:focus {
+  background-color: #349f34;
+  outline: none;
+}
+
+
+input:focus {
+    background-color: rgb(31, 69, 103);
+    outline: none;
+}
+
+.form-row input:focus {
+    background-color: black;
+    outline: none;
+
+}
+
+
+
+
+
+
+@media ONLY screen AND (max-width: 500px) {
+    .form-row, .check-row {
+   flex-direction: column;
+}
+
+.form-row label {
+    text-align: left;
+}
+
+}
