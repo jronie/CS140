@@ -1,0 +1,79 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aqua;
+}
+
+header, footer {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    color: rgb(91, 125, 32);
+
+}
+
+
+/* TEXTBOX DISPLAYS */
+.form-row input, textarea {
+    background-color: rgb(233, 233, 165);
+    display: flex;
+    margin: 10px 0px;
+    gap: 10px;
+}
+
+.form2 {
+    display: flex;
+    margin: 10px 0px;
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.form2 #savings, .form2 #checking, .form2 #both, .form2 #checkbox {
+    accent-color: rgb(27, 207, 69);
+}
+
+/* DONATION */
+.form2 select {
+    background-color: rgb(237, 84, 84);
+}
+
+/* SUBMIT BUTTON STUFF */
+.submit-button { 
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button input {
+    background-color: rgb(51, 88, 51);
+    color: aliceblue;
+    border: 2px solid white;
+}
+
+/* FIELDSET AND LEGEND */
+fieldset {
+    background-color: rgb(103, 223, 223);
+    border: 2px solid black;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+legend {
+    font-family:fantasy;
+}
+
+
+/*MOBILE STUFFS*/
+@media ONLY screen AND (max-width: 500px) {
+    .form-row, .form2, .submit-button {
+    flex-direction: column;
+}
+
+.form-row label, .form2 label {
+    text-align: left;
+}
+
+.form2:has(#savings) {
+    align-items: center;
+}
+
+
+}

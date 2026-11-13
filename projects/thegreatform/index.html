@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheGreatForm</title>
+    <link rel="stylesheet" href="thegreatform.css">
+</head>
+<body>
+    <header>
+        <h1>The Great Form Website</h1>
+    </header>
+    <main>
+        <form action="formprocessing.html">
+            <fieldset>
+                <legend>Your Personal Information</legend>
+            
+                <!-- Textbox -->
+                <div class="form-row">
+                    <label for="name">Give us your name ...
+                        <input id="name" type="text" placeholder="Your full legal name">
+                    </label>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="form-row">
+                    <label for="birthday"> When were you born?
+                    <input type="date" id="birthday"  name="birthday" value="2026-11-15" min="1950-11-12" max="2027-11-12">
+                    </label>
+                </div>
+
+                <!-- Password -->
+                <div class="form-row">
+                    <label for="pass">Good ... Now your bank account password ... 
+                        <input id="pass" type="password" placeholder="Secret Password">
+                    </label>
+                </div>
+                
+                <!-- Tel -->
+                <div class="form-row">
+                    <label for="phone">See? That wasn't so difficult. Now your phone number. 
+                        <input id="phone" type="tel" placeholder="(808) 808-8080">
+                    </label>
+                </div>
+            </fieldset>
+
+            <p>Wonderful. Now let us begin.</p>
+
+            <fieldset>
+                <legend>ANSWER THESE QUESTIONS!!! Please.</legend>
+
+                <!-- TextArea -->
+
+                <div class="form2">
+                    <label for="paragraph"> Tell us about yourself 
+                    <textarea name="paragraph" id="paragraph" rows="4" cols="50" ></textarea>
+                    </label>
+                    
+                </div>
+
+                <!-- Checkbox -->
+
+                <div class="form2">
+                    <label for="checkbox"> Yes, I wish to receive emails regarding offers and promotions!
+                        <input type="checkbox" id="checkbox">
+                    </label>
+                </div>
+
+                <!-- Radiobutton -->
+                <p>Please select your current bank account(s):</p>
+                <div class="form2"> 
+
+                    <div class="spacer"></div>
+                    
+                    <input type="radio" id="savings" name="bank" checked>
+                    <label for="savings">Savings Account</label>
+
+                    <input type="radio" id="checking" name="bank">
+                    <label for="checking">Checking Account</label>
+
+                    <input type="radio" id="both" name="bank">
+                    <label for="both">Both</label>
+                
+                </div>
+
+                <!-- Selectbox -->
+
+                <div class="form2">
+                    <label for="donation">Select your donation size:</label>
+                        <select name="donation" id="donation">
+                            <option value="$100">$100</option>
+                            <option value="$1,000">$1,000</option>
+                            <option value="$10,000" selected>$10,000</option>
+                            <option value="Everything">Everything</option>
+                        </select>
+                </div>
+
+            </fieldset>
+        
+            <p>We'd like to personally thank you for your generous donation to our cause. Please select the submit button.</p>
+            
+            <div class="submit-button">
+                <div class="spacer"></div>
+                <input type="submit">
+            </div>
+        </form>
+    </main>
+
+    <footer>&copy; 2026 Joseph Joseph</footer>
+    
+</body>
+</html>
