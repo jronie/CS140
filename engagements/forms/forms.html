@@ -12,7 +12,7 @@
         <nav></nav>
     </header>
     <main>
-        <form action="formprocessing.html" method="get">
+        <form action="formprocessing.html" method="get" id="myform">
            <fieldset>
                 <legend>New Account</legend>
                 
@@ -94,9 +94,44 @@
         <p>You can style it by using flex or grid displays, changing the background, etc. </p>
         <p>The professor likes flex as it doesn't have as many issues with overlapping and such.</p>
         <p>A good mobile form has big enough buttons for fat fingers to click on.</p>
+   
+        <h2>Day 3 Questions</h2>
+        <p>javascript is a programming language which allows us to change or modify a website. JavaScript won the battle with the other Sun computer (code became firefox) and JavaScript became more popular than Java.</p>
+        <p>Can run Javascript (DOM) in a browser or nodejs (most popular)</p>
+        <p>jQuery is a library for Javascript, but isn't as popular now because of AI use.</p>
+        <p>react.js</p>
+        <p>Because the code is on github, it will not get submitted to a form. Github is open sourced but limits this to prevent hackers from abusing the feature.</p>
     </main>
     <footer></footer>
+    
+    <script>
+        document.getElementById('myform').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert("Form Submitted");
 
+            const personname = document.getElementById('personname').value;
+            const email = document.getElementById ('email').value;
+            const password = document.getElementById ('password').value;
+            const paragraph = document.getElementById('paragraph').value
+
+            if (!personname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+           
+const formData = {
+    name: personname,
+    email: email,
+    password: password,
+    age: paragraph,
+
+};
+    console.log(formData);
+
+        });
+
+
+    </script>
     
 </body>
 </html>

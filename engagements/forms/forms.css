@@ -63,6 +63,7 @@ input:focus {
 
 .form-row input:focus {
     background-color: black;
+    color: aliceblue;
     outline: none;
 
 }
