@@ -12,6 +12,7 @@
         <nav></nav>
     </header>
     <main>
+        <div id="message"></div>
         <form action="formprocessing.html" method="get" id="myform">
            <fieldset>
                 <legend>New Account</legend>
@@ -101,6 +102,13 @@
         <p>jQuery is a library for Javascript, but isn't as popular now because of AI use.</p>
         <p>react.js</p>
         <p>Because the code is on github, it will not get submitted to a form. Github is open sourced but limits this to prevent hackers from abusing the feature.</p>
+    
+        <h2>Day 4 Questions</h2>
+        <p>Asynchronous JavaScript & XML. It pulls data from and communicated with the servers of a website.</p>
+        <p>It keeps it organized and in the right format.</p>
+        <p>Console under the inspect option will show errors-- which have line numbers under them to show where the error was found.</p>
+        <p>Yes, the are the same ids, and no, the counsole showed no errors.</p>
+
     </main>
     <footer></footer>
     
@@ -128,7 +136,24 @@ const formData = {
 };
     console.log(formData);
 
-        });
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "submit.json", true);
+    xhr.setRequestHeader ("Content-Type", "application/json;charset=UTF-8");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            alert('Form submitted successfully.');
+            message = document.getElementById ('message');
+            const response = JSON.parse(xhr.responseText);
+            message.textContent = response.message;
+            form = document.getElementById('myform');
+            form.reset();
+        } else if (xhr. readyState === 4) {
+            alert('Error submitting form.');
+        }
+    };
+        xhr.send(JSON.stringify(formData));
+});
+
 
 
     </script>
