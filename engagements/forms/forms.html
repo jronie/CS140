@@ -84,79 +84,10 @@
                 </div>
             </fieldset>
         </form>
-        <p>Submitting a form is like clicking another link. Action shows where the submitted information will go.</p>
-        <p>Method defines the security of information. If you change information, use post.</p>
-        <p>"Get" is unsecure and places information in the link bar. Post is better as it hides the info from the search bar, but is only a little better. HTTPS is the best as it encrpits information.</p>
-        <p>If you want an option to be automatically selected, you must add "checked" to the input.</p>
-        <p>Preset-values make an option automatically checked, placeholders just give an example of how you can respond to the prompt.</p>
-        <p>HTML5 added color, date, datetime-local, email, month, number, range, search, tel, time, url, and week. I used tel and url.</p>
-
-        <h2>Day 2 Questions</h2>
-        <p>You can style it by using flex or grid displays, changing the background, etc. </p>
-        <p>The professor likes flex as it doesn't have as many issues with overlapping and such.</p>
-        <p>A good mobile form has big enough buttons for fat fingers to click on.</p>
-   
-        <h2>Day 3 Questions</h2>
-        <p>javascript is a programming language which allows us to change or modify a website. JavaScript won the battle with the other Sun computer (code became firefox) and JavaScript became more popular than Java.</p>
-        <p>Can run Javascript (DOM) in a browser or nodejs (most popular)</p>
-        <p>jQuery is a library for Javascript, but isn't as popular now because of AI use.</p>
-        <p>react.js</p>
-        <p>Because the code is on github, it will not get submitted to a form. Github is open sourced but limits this to prevent hackers from abusing the feature.</p>
-    
-        <h2>Day 4 Questions</h2>
-        <p>Asynchronous JavaScript & XML. It pulls data from and communicated with the servers of a website.</p>
-        <p>It keeps it organized and in the right format.</p>
-        <p>Console under the inspect option will show errors-- which have line numbers under them to show where the error was found.</p>
-        <p>Yes, the are the same ids, and no, the counsole showed no errors.</p>
-
     </main>
-    <footer></footer>
+    <footer>&copy; 2026 Jojojojo</footer>
     
-    <script>
-        document.getElementById('myform').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert("Form Submitted");
-
-            const personname = document.getElementById('personname').value;
-            const email = document.getElementById ('email').value;
-            const password = document.getElementById ('password').value;
-            const paragraph = document.getElementById('paragraph').value
-
-            if (!personname || !email) {
-                alert("You need a name and email.");
-                return;
-            }
-           
-const formData = {
-    name: personname,
-    email: email,
-    password: password,
-    age: paragraph,
-
-};
-    console.log(formData);
-
-    const xhr = new XMLHttpRequest();
-    xhr.open("GET", "submit.json", true);
-    xhr.setRequestHeader ("Content-Type", "application/json;charset=UTF-8");
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            alert('Form submitted successfully.');
-            message = document.getElementById ('message');
-            const response = JSON.parse(xhr.responseText);
-            message.textContent = response.message;
-            form = document.getElementById('myform');
-            form.reset();
-        } else if (xhr. readyState === 4) {
-            alert('Error submitting form.');
-        }
-    };
-        xhr.send(JSON.stringify(formData));
-});
-
-
-
-    </script>
+    <script src="formprocessing.js"></script>
     
 </body>
 </html>
